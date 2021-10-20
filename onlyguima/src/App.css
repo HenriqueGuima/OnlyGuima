@@ -48,6 +48,8 @@ body {
   color: #eeeeee;
   text-align: center;
   font-family: "Lato", sans-serif;
+  height: 300vh;
+  background-attachment: fixed;
 }
 
 @media screen and (max-width: 700px) {
@@ -140,7 +142,7 @@ a {
 
 .menu {
   margin-inline: auto;
-  position: absolute;
+  position: fixed;
   top: 15%;
   bottom: 0;
   left: 0;
@@ -150,6 +152,7 @@ a {
   text-align: center;
   box-sizing: border-box;
   font-size: 26px;
+  z-index: 5;
 }
 
 /* .menu-item {
@@ -217,7 +220,7 @@ a {
   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   transform: scale(1.1, 1.1) translate3d(0, 0, 0);
   cursor: pointer;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 3px 4px 12px 0px rgb(0 0 0 / 42%);
 }
 
 .menu-main:hover {
@@ -297,84 +300,222 @@ a {
   background-image: url("./assets/animal.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.cat:hover {
-  color: #669ae1;
-  text-shadow: none;
+.cat .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  font-style: unset;
+  left: 70%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.cat:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .cinema {
   background-image: url("./assets/cinema-projector.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.cinema:hover {
-  color: #70cc72;
-  text-shadow: none;
+.cinema .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: 60%;
+  font-style: unset;
+  left: 80%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.cinema:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .music {
   background-image: url("./assets/musical-note.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.music:hover {
-  color: #fe4365;
-  text-shadow: none;
+.music .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: 60%;
+  font-style: unset;
+  left: 70%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.music:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .nature {
   background-image: url("./assets/nature.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.nature:hover {
-  color: #c49cde;
-  text-shadow: none;
+.nature .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: -20%;
+  font-style: unset;
+  left: -25%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.nature:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .shutter {
   background-image: url("./assets/shutter.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.shutter:hover {
-  color: #fc913a;
-  text-shadow: none;
+.shutter .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  font-style: unset;
+  left: -160%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.shutter:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .vegetarian {
   background-image: url("./assets/vegetarian.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  box-shadow: inset 0px 0px 8px 7px rgb(255 255 255 / 14%);
+  background-size: 40%;
+  box-shadow: inset 0px 0px 20px 30px rgb(255 255 255 / 14%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(5px);
+  border-top: solid #ffffff6e 1px;
 }
 
-.vegetarian:hover {
-  color: #62c2e4;
-  text-shadow: none;
+.vegetarian .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 2em;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  font-style: unset;
+  left: -150%;
+  /* margin-left: -60px; */
+  font-size: 1rem;
+  opacity: 0%;
+  transition: all 0.45s ease-out;
+}
+.vegetarian:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.45s ease-out;
+  transform: scale(1.05);
+  opacity: 100%;
 }
 
 .credit {
@@ -494,4 +635,28 @@ label:hover :checked + .card {
   transform: rotateY(160deg);
   -webkit-transform: rotateY(160deg);
   box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+.glassContainer1 {
+  position: absolute;
+  top: 45%;
+  height: 10em;
+}
+
+.glassContainer2 {
+  position: absolute;
+  top: 75%;
+  height: 10em;
+}
+
+.glassContainer3 {
+  position: absolute;
+  top: 115%;
+  height: 10em;
+}
+
+.glassContainer4 {
+  position: absolute;
+  top: 155%;
+  height: 10em;
 }

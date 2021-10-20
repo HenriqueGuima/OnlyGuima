@@ -1,4 +1,4 @@
-import { Box, Container } from "@material-ui/core";
+import { Box, Container, Tooltip } from "@material-ui/core";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 
@@ -16,7 +16,7 @@ export default function HeaderComponent() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Container>
+      <Container className="fixedMenu">
         <Box>
           <nav class="menu">
             <input
@@ -27,30 +27,29 @@ export default function HeaderComponent() {
               id="menu-open"
             />
             <label class="menu-main" for="menu-open"></label>
-
             <a href="#" class="menu-item cat">
               {" "}
-              <i class="fa fa-anchor"></i>{" "}
+              <i class="fa fa-anchor tooltiptext">Cats</i>{" "}
             </a>
             <a href="#" class="menu-item cinema">
               {" "}
-              <i class="fa fa-coffee"></i>{" "}
+              <i class="fa fa-coffee tooltiptext">Cinema</i>{" "}
             </a>
             <a href="#" class="menu-item music">
               {" "}
-              <i class="fa fa-heart"></i>{" "}
+              <i class="fa fa-heart tooltiptext">Music</i>{" "}
             </a>
             <a href="#" class="menu-item nature">
               {" "}
-              <i class="fa fa-microphone"></i>{" "}
+              <i class="fa fa-microphone tooltiptext">Nature</i>{" "}
             </a>
             <a href="#" class="menu-item shutter">
               {" "}
-              <i class="fa fa-star"></i>{" "}
+              <i class="fa fa-star tooltiptext">Photography</i>{" "}
             </a>
             <a href="#" class="menu-item vegetarian">
               {" "}
-              <i class="fa fa-diamond"></i>{" "}
+              <i class="fa fa-diamond tooltiptext">Vegetarian</i>{" "}
             </a>
           </nav>
         </Box>

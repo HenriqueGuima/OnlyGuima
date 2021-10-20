@@ -9,7 +9,18 @@ function App() {
   return (
     <React.Fragment>
       <HeaderComponent></HeaderComponent>
-      <ContentComponent></ContentComponent>
+      <Container className="glassContainer1" maxWidth={false}>
+        <ContentComponent></ContentComponent>
+      </Container>
+      <Container className="glassContainer2" maxWidth={false}>
+        <ContentComponent></ContentComponent>
+      </Container>
+      <Container className="glassContainer3" maxWidth={false}>
+        <ContentComponent></ContentComponent>
+      </Container>
+      <Container className="glassContainer4" maxWidth={false}>
+        <ContentComponent></ContentComponent>
+      </Container>
     </React.Fragment>
   );
 }
