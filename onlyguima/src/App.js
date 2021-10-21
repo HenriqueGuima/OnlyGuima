@@ -6,6 +6,7 @@ import HeaderComponent from "./components/HeaderComponent";
 import ContentComponent from "./components/ContentComponent";
 import AgileComponent from "./components/AgileComponent";
 import WeMakeItComponent from "./components/WeMakeItComponent";
+import CMComponent from "./components/CMComponent";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           bootstrap="https://imgur.com/EDD10Iu"
           react="https://i.imgur.com/0xKX17U.png"
           flutter="https://imgur.com/QP1tzNU"
+          mysql="https://imgur.com/26TVszy"
         ></ContentComponent>
       </Container>
       <Container className="glassContainer2" maxWidth={false}>
@@ -55,11 +57,18 @@ function App() {
         ></ContentComponent> */}
       </Container>
       <Container className="glassContainer4" maxWidth={false}>
-        <ContentComponent
+        <CMComponent
           empresa="C2MSIS"
           funcao="Software Developer"
           src="https://c2msis.pt/wp-content/uploads/2019/04/cropped-logo-4"
-        ></ContentComponent>
+          csharp="https://imgur.com/Pjx2XOz"
+          sqlite="https://imgur.com/wFA3vqu"
+        ></CMComponent>
+        {/* <ContentComponent
+          empresa="C2MSIS"
+          funcao="Software Developer"
+          src="https://c2msis.pt/wp-content/uploads/2019/04/cropped-logo-4"
+        ></ContentComponent> */}
       </Container>
       {/* <Container className="glassContainer5" maxWidth={false}>
         <ContentComponent

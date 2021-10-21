@@ -1,10 +1,7 @@
-import { Box, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import WpComponent from "./stack/WpComponent";
-import BootstrapComponent from "./stack/BootstrapComponent";
-import ReactComponent from "./stack/ReactComponent";
-import FlutterComponent from "./stack/FlutterComponent";
+import CsharpComponent from "./stack/CsharpComponent";
+import SqliteComponent from "./stack/SqliteComponent";
 
 const useStyles = makeStyles((theme) => ({
   glass: {
@@ -60,10 +57,8 @@ export default function ContentComponent(props) {
           </div>
           <div class="back">{props.funcao}</div>
         </div>
-        <WpComponent wordpress={props.wordpress}></WpComponent>
-        <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
-        <ReactComponent react={props.react}></ReactComponent>
-        <FlutterComponent flutter={props.flutter}></FlutterComponent>
+        <CsharpComponent csharp={props.csharp}></CsharpComponent>
+        <SqliteComponent sqlite={props.sqlite}></SqliteComponent>
       </label>
     </React.Fragment>
   );

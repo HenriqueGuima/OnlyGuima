@@ -5,6 +5,7 @@ import WpComponent from "./stack/WpComponent";
 import BootstrapComponent from "./stack/BootstrapComponent";
 import ReactComponent from "./stack/ReactComponent";
 import FlutterComponent from "./stack/FlutterComponent";
+import MysqlComponent from "./stack/MySQL";
 
 const useStyles = makeStyles((theme) => ({
   glass: {
@@ -64,6 +65,7 @@ export default function ContentComponent(props) {
         <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
         <ReactComponent react={props.react}></ReactComponent>
         <FlutterComponent flutter={props.flutter}></FlutterComponent>
+        <MysqlComponent mysql={props.mysql}></MysqlComponent>
       </label>
     </React.Fragment>
   );
