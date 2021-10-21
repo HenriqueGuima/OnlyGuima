@@ -2,9 +2,8 @@ import { Box, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 import WpComponent from "./stack/WpComponent";
-import BootstrapComponent from "./stack/BootstrapComponent";
-import ReactComponent from "./stack/ReactComponent";
-import FlutterComponent from "./stack/FlutterComponent";
+import OutSystemsComponent from "./stack/OutSystemsComponent";
+import OpenCartComponent from "./stack/OpenCartComponent";
 
 const useStyles = makeStyles((theme) => ({
   glass: {
@@ -61,9 +60,10 @@ export default function ContentComponent(props) {
           <div class="back">{props.funcao}</div>
         </div>
         <WpComponent wordpress={props.wordpress}></WpComponent>
-        <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
-        <ReactComponent react={props.react}></ReactComponent>
-        <FlutterComponent flutter={props.flutter}></FlutterComponent>
+        <OutSystemsComponent
+          outsystems={props.outsystems}
+        ></OutSystemsComponent>
+        <OpenCartComponent opencart={props.opencart}></OpenCartComponent>
       </label>
     </React.Fragment>
   );

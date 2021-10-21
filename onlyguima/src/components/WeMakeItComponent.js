@@ -1,10 +1,10 @@
 import { Box, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import WpComponent from "./stack/WpComponent";
-import BootstrapComponent from "./stack/BootstrapComponent";
-import ReactComponent from "./stack/ReactComponent";
-import FlutterComponent from "./stack/FlutterComponent";
+import HTMLComponent from "./stack/HTMLComponent";
+import CSSComponent from "./stack/CSSComponent";
+import JSComponent from "./stack/JSComponent";
+import MapsAPIComponent from "./stack/MapsAPIComponent";
 
 const useStyles = makeStyles((theme) => ({
   glass: {
@@ -60,10 +60,10 @@ export default function ContentComponent(props) {
           </div>
           <div class="back">{props.funcao}</div>
         </div>
-        <WpComponent wordpress={props.wordpress}></WpComponent>
-        <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
-        <ReactComponent react={props.react}></ReactComponent>
-        <FlutterComponent flutter={props.flutter}></FlutterComponent>
+        <HTMLComponent html="https://imgur.com/3ENvikD"></HTMLComponent>
+        <CSSComponent css="https://imgur.com/iOl4gdZ"></CSSComponent>
+        <JSComponent js="https://imgur.com/JOlO6XB"></JSComponent>
+        <MapsAPIComponent mapsapi="https://imgur.com/CrRC3om"></MapsAPIComponent>
       </label>
     </React.Fragment>
   );
