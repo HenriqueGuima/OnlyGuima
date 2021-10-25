@@ -44,9 +44,9 @@ export default function ContentComponent(props) {
         <Typography className={classes.role}>Developer</Typography>
       </Container> */}
 
-      <div className="card-blur"></div>
+      {/* <div className="card-blur"></div> */}
       <label className="label-card">
-        <input type="checkbox" />
+        {/* <input type="checkbox" />
         <div class="card">
           <div class="front">
             <img src={`${props.src}.png`} className="card-image"></img>
@@ -56,9 +56,35 @@ export default function ContentComponent(props) {
             <span className="card-text-funcao">{props.funcao}</span>
           </div>
           <div class="back">{props.funcao}</div>
+        </div> */}
+        <div className="container">
+          <div className="card">
+            <div className="frente">
+              <span class="card-text-funcao-ano">2020</span>
+              <img src={`${props.src}.png`} className="card-image"></img>
+              <br />
+              <span className="card-text-empresa">{props.empresa}</span>
+              <br />
+              <span className="card-text-funcao">{props.funcao}</span>
+            </div>
+
+            <div className="tras">
+              <span className="card-text-funcao">
+                {props.funcao}
+                <br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Developed a program that would create a unique license key for
+                  each machine depending on the data input in the WPF form and
+                  specific machine components. Program is able to get info from
+                  the machines components through extensive C# and SQL.
+                </span>
+              </span>
+            </div>
+          </div>
+          <CsharpComponent csharp={props.csharp}></CsharpComponent>
+          <SqliteComponent sqlite={props.sqlite}></SqliteComponent>
         </div>
-        <CsharpComponent csharp={props.csharp}></CsharpComponent>
-        <SqliteComponent sqlite={props.sqlite}></SqliteComponent>
       </label>
     </React.Fragment>
   );

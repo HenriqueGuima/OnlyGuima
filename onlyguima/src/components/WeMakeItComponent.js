@@ -5,6 +5,7 @@ import HTMLComponent from "./stack/HTMLComponent";
 import CSSComponent from "./stack/CSSComponent";
 import JSComponent from "./stack/JSComponent";
 import MapsAPIComponent from "./stack/MapsAPIComponent";
+import CsharpComponent from "./stack/CsharpComponent";
 
 const useStyles = makeStyles((theme) => ({
   glass: {
@@ -47,9 +48,9 @@ export default function ContentComponent(props) {
         <Typography className={classes.role}>Developer</Typography>
       </Container> */}
 
-      <div className="card-blur"></div>
+      {/* <div className="card-blur"></div> */}
       <label className="label-card">
-        <input type="checkbox" />
+        {/* <input type="checkbox" />
         <div class="card">
           <div class="front">
             <img src={`${props.src}.png`} className="card-image"></img>
@@ -59,11 +60,39 @@ export default function ContentComponent(props) {
             <span className="card-text-funcao">{props.funcao}</span>
           </div>
           <div class="back">{props.funcao}</div>
+        </div> */}
+
+        <div className="container">
+          <div className="card">
+            <div className="frente">
+              <span class="card-text-funcao-ano">2019</span>
+              <img src={`${props.src}.png`} className="card-image"></img>
+              <br />
+              <span className="card-text-empresa">{props.empresa}</span>
+              <br />
+              <span className="card-text-funcao-frente">{props.funcao}</span>
+            </div>
+
+            <div className="tras">
+              <span className="card-text-funcao">
+                {props.funcao}
+                <br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Google Maps feature development to find any pharmacy nearby
+                  the users location. Development of an automation program do
+                  fill certain fields in the pharmacies backoffice with Regex
+                  and C#.
+                </span>
+              </span>
+            </div>
+          </div>
+          <HTMLComponent html="https://imgur.com/3ENvikD"></HTMLComponent>
+          <CSSComponent css="https://imgur.com/iOl4gdZ"></CSSComponent>
+          <JSComponent js="https://imgur.com/JOlO6XB"></JSComponent>
+          <MapsAPIComponent mapsapi="https://imgur.com/CrRC3om"></MapsAPIComponent>
+          <CsharpComponent csharp={props.csharp}></CsharpComponent>
         </div>
-        <HTMLComponent html="https://imgur.com/3ENvikD"></HTMLComponent>
-        <CSSComponent css="https://imgur.com/iOl4gdZ"></CSSComponent>
-        <JSComponent js="https://imgur.com/JOlO6XB"></JSComponent>
-        <MapsAPIComponent mapsapi="https://imgur.com/CrRC3om"></MapsAPIComponent>
       </label>
     </React.Fragment>
   );

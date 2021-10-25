@@ -47,10 +47,8 @@ export default function ContentComponent(props) {
 
         <Typography className={classes.role}>Developer</Typography>
       </Container> */}
-
-      <div className="card-blur"></div>
       <label className="label-card">
-        <input type="checkbox" />
+        {/* <input type="checkbox" />
         <div class="card">
           <div class="front">
             <img src={`${props.src}.png`} className="card-image"></img>
@@ -59,13 +57,83 @@ export default function ContentComponent(props) {
             <br />
             <span className="card-text-funcao">{props.funcao}</span>
           </div>
-          <div class="back">{props.funcao}</div>
+          <div class="back">
+            <span className="card-text-funcao">
+              {props.funcao}
+              <br></br>
+            </span>
+            <span className="card-text-funcao">
+              Web Development <br></br>
+              <span className="card-text-back">
+                Website and Webapps development with tools like Wordpress,
+                Bootstrap, React and MySQL for database
+              </span>
+              <br></br>
+            </span>
+            <span className="card-text-funcao">
+              Mobile Development<br></br>
+            </span>
+            <span className="card-text-funcao">
+              Team Management<br></br>
+            </span>
+            <span className="card-text-funcao">
+              Project Management<br></br>
+            </span>
+          </div>
+        </div> */}
+
+        <div className="container">
+          <div className="card">
+            <div className="frente">
+              <span class="card-text-funcao-ano">2021</span>
+              <img src={`${props.src}.png`} className="card-image"></img>
+              <br />
+              <span className="card-text-empresa">{props.empresa}</span>
+              <br />
+              <span className="card-text-funcao">{props.funcao}</span>
+            </div>
+
+            <div className="tras">
+              {/* <span className="card-text-funcao">
+                Web and Mobile Developer
+                <br></br>
+                
+                <br></br>
+              </span> */}
+              <span className="card-text-funcao">
+                Web Development <br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Website and Webapps development with tools like Wordpress,
+                  Bootstrap, React and MySQL for database.
+                </span>
+                <br></br>
+              </span>
+              <span className="card-text-funcao">
+                Mobile Development<br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Mobile apps development in Flutter not only for Android
+                  devices but also iOS. Usage of APIs such as Google Places to
+                  place objects in a Google Maps feature.
+                </span>
+              </span>
+              <span className="card-text-funcao">
+                Team Management<br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Projects distribution throughout the team, conducting
+                  meetings, orientation and leadership.
+                </span>
+              </span>
+            </div>
+          </div>
+          <WpComponent wordpress={props.wordpress}></WpComponent>
+          <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
+          <ReactComponent react={props.react}></ReactComponent>
+          <FlutterComponent flutter={props.flutter}></FlutterComponent>
+          <MysqlComponent mysql={props.mysql}></MysqlComponent>
         </div>
-        <WpComponent wordpress={props.wordpress}></WpComponent>
-        <BootstrapComponent bootstrap={props.bootstrap}></BootstrapComponent>
-        <ReactComponent react={props.react}></ReactComponent>
-        <FlutterComponent flutter={props.flutter}></FlutterComponent>
-        <MysqlComponent mysql={props.mysql}></MysqlComponent>
       </label>
     </React.Fragment>
   );

@@ -46,9 +46,8 @@ export default function ContentComponent(props) {
         <Typography className={classes.role}>Developer</Typography>
       </Container> */}
 
-      <div className="card-blur"></div>
       <label className="label-card">
-        <input type="checkbox" />
+        {/* <input type="checkbox" />
         <div class="card">
           <div class="front">
             <img src={`${props.src}.png`} className="card-image"></img>
@@ -58,12 +57,39 @@ export default function ContentComponent(props) {
             <span className="card-text-funcao">{props.funcao}</span>
           </div>
           <div class="back">{props.funcao}</div>
+        </div> */}
+
+        <div className="container">
+          <div className="card">
+            <div className="frente">
+              <span class="card-text-funcao-ano">2020</span>
+              <img src={`${props.src}.png`} className="card-image"></img>
+              <br />
+              <span className="card-text-empresa">{props.empresa}</span>
+              <br />
+              <span className="card-text-funcao">{props.funcao}</span>
+            </div>
+
+            <div className="tras">
+              <span className="card-text-funcao">
+                Web Development <br></br>
+                <br></br>
+                <span className="card-text-back">
+                  Web development with technologies such as Wordpress and
+                  OpenCart usually for E-Commerce websites. PWAs co-development
+                  with OutSystems and webapps like digital restaurant menus in
+                  C#.
+                </span>
+                <br></br>
+              </span>
+            </div>
+          </div>
+          <WpComponent wordpress={props.wordpress}></WpComponent>
+          <OutSystemsComponent
+            outsystems={props.outsystems}
+          ></OutSystemsComponent>
+          <OpenCartComponent opencart={props.opencart}></OpenCartComponent>
         </div>
-        <WpComponent wordpress={props.wordpress}></WpComponent>
-        <OutSystemsComponent
-          outsystems={props.outsystems}
-        ></OutSystemsComponent>
-        <OpenCartComponent opencart={props.opencart}></OpenCartComponent>
       </label>
     </React.Fragment>
   );

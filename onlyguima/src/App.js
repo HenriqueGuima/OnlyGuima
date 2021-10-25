@@ -40,23 +40,6 @@ function App() {
         ></ContentComponent> */}
       </Container>
       <Container className="glassContainer3" maxWidth={false}>
-        <WeMakeItComponent
-          empresa="We Make It"
-          funcao="Web Development as an Intern"
-          src="https://farmamais.pt/wp-content/uploads/2020/02/logotipo-WEMAKEIT-547x300"
-          js="https://s.w.org/style/images/about/WordPress-logotype-wmark-white"
-          html="https://imgur.com/stI1tdI.png"
-          css="https://imgur.com/dow1Z2E"
-          mapsAPI=""
-        ></WeMakeItComponent>
-        {/* <ContentComponent
-          empresa="We Make It"
-          funcao="Web Development as an Intern"
-          src="https://farmamais.pt/wp-content/uploads/2020/02/logotipo-WEMAKEIT-547x300"
-          // style={{ maxWidth: "200px !important" }}
-        ></ContentComponent> */}
-      </Container>
-      <Container className="glassContainer4" maxWidth={false}>
         <CMComponent
           empresa="C2MSIS"
           funcao="Software Developer"
@@ -68,6 +51,24 @@ function App() {
           empresa="C2MSIS"
           funcao="Software Developer"
           src="https://c2msis.pt/wp-content/uploads/2019/04/cropped-logo-4"
+        ></ContentComponent> */}
+      </Container>
+      <Container className="glassContainer4" maxWidth={false}>
+        <WeMakeItComponent
+          empresa="We Make It"
+          funcao="Web Development as an Intern"
+          src="https://imgur.com/aRnTiGJ.png"
+          js="https://s.w.org/style/images/about/WordPress-logotype-wmark-white"
+          html="https://imgur.com/stI1tdI.png"
+          css="https://imgur.com/dow1Z2E"
+          csharp="https://imgur.com/Pjx2XOz"
+          mapsAPI="https://imgur.com/CrRC3om"
+        ></WeMakeItComponent>
+        {/* <ContentComponent
+          empresa="We Make It"
+          funcao="Web Development as an Intern"
+          src="https://farmamais.pt/wp-content/uploads/2020/02/logotipo-WEMAKEIT-547x300"
+          // style={{ maxWidth: "200px !important" }}
         ></ContentComponent> */}
       </Container>
       {/* <Container className="glassContainer5" maxWidth={false}>
